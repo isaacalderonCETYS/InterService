@@ -6,7 +6,7 @@
 
 ### [Link de Adobe XD]
 
-### [Link de Trello] (https://trello.com/b/zL9f6tCS/kanban-interservice)
+[Link de Trello] (https://trello.com/b/zL9f6tCS/kanban-interservice)
 
 
 # Comments
