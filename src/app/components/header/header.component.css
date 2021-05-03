@@ -1,0 +1,40 @@
+.search-navbar-white{
+    background-color: white;
+    height: 40px;
+    margin: 12px;
+    border-radius: 40px;
+    margin-right: -50px;
+}
+
+.search-navbar-white input::placeholder {
+    color: gray;
+}
+
+.search-navbar-gray{
+    background-color: gray;
+    height: 40px;
+    margin: 12px;
+    border-radius: 40px;
+    margin-right: -95px;
+}
+
+i.icon-black{
+    color: black;
+}
+
+nav .search-navbar-gray input:focus,
+nav .search-navbar-gray input[type=text]:valid,
+nav .search-navbar-gray input[type=password]:valid,
+nav .search-navbar-gray input[type=email]:valid,
+nav .search-navbar-gray input[type=url]:valid,
+nav .search-navbar-gray input[type=date]:valid{
+    border:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    background-color: gray;
+}
+
+#btn-floating-navbar{
+    margin-top:-5px;
+    margin-left: 50px;
+}
