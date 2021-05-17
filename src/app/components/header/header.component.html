@@ -1,10 +1,16 @@
 <nav class="black">
     <div class="nav-wrapper row">
-        <div class="col l2">
-            <a href="#" class="brand-logo">Logo</a>
+        <div class="col s10 input-field hide-on-large-only">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
         </div>
-        
-        <div class="col l7">
+
+        <div class="col l2">
+            <a href="#" class="brand-logo waves-effect waves-light">Logo</a>
+        </div>
+
+        <div class="col l7 hide-on-med-and-down">
             <div class="col l6 valign-wrapper search-navbar-white">
                 <i class="tiny material-icons icon-black">my_location</i>
                 <form>
@@ -25,6 +31,7 @@
                 <a class="btn-floating waves-effect waves-light indigo darken-4" id="btn-floating-navbar"><i class="material-icons" style="margin-top:-10px">search</i></a>
             </div>
         </div>
+        
 
         <div class="col l3">
             <ul class="right hide-on-med-and-down l3">
@@ -32,6 +39,13 @@
                 <li><a href="#" class="waves-effect waves-light" style="border-radius: 100px;"><i class="material-icons">person</i></a></li>
             </ul>
         </div>
+        
+        <a href="#" data-target="mobile-demo" class="col s1 sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Compras</a></li>
+        </ul>
       
     </div>
 </nav>
