@@ -10,11 +10,22 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  public ocultar_logo = true;
+
   ngOnInit(): void {
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems, {});
     });
+
   }
+  
+  onFocus(){
+    this.ocultar_logo = false;
+  };  
+
+  onBlur(){
+    this.ocultar_logo = true;
+  };  
 
 }

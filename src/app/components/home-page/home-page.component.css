@@ -1,0 +1,20 @@
+.rainbow-background{
+    background: repeating-linear-gradient(
+        to bottom,
+        #bed9e8 0%,
+        #bed9e8 25%,
+        #f7deba 25%,
+        #f7deba 50%,
+        #f4adde 50%,
+        #f4adde 75%,
+        #cbe0bd 75%,
+        #cbe0bd 100%);
+};
+
+.bg-r-blue{
+    background: black;
+};
+
+.rounded-image{
+    border-radius: 50%;
+};
