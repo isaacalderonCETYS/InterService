@@ -11,3 +11,8 @@
     height: 700px;
     overflow: auto;
 }
+
+#mapa-mapbox{
+    height: 700px;
+    width: 75%;
+}

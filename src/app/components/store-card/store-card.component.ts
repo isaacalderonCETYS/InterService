@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { ProductsPageComponent } from '../products-page/products-page.component';
 
 @Component({
   selector: 'app-store-card',
@@ -15,6 +16,9 @@ export class StoreCardComponent implements OnInit {
   @Input() facebook!: boolean;
   @Input() direccion: string = "";
   @Input() estrellas!: number;
+  @Input() lng!: number;
+  @Input() lat!: number;
+
 
   constructor() { }
 
