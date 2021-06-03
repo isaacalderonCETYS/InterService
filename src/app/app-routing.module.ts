@@ -6,6 +6,7 @@ import {ProfilePageComponent} from './components/profile-page/profile-page.compo
 import {CartPageComponent} from './components/cart-page/cart-page.component'
 import {AboutUsPageComponent} from './components/about-us-page/about-us-page.component'
 import {TermsPageComponent} from './components/terms-page/terms-page.component'
+import {BuyPageComponent} from './components/buy-page/buy-page.component'
 
 const routes: Routes = [
   {path: '', component:HomePageComponent},
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path: 'cart', component:CartPageComponent},
   {path: 'about-us', component:AboutUsPageComponent},
   {path: 'terms', component:TermsPageComponent},
+  {path: 'products/buy', component:BuyPageComponent},
+  {path: 'cart/buy', component:BuyPageComponent},
 ];
 
 @NgModule({

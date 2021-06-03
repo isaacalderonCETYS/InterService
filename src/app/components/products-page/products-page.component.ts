@@ -36,7 +36,8 @@ export class ProductsPageComponent implements OnInit {
   }
 
   crearMarcador(lng: number, lat: number){
-    const marker = new Mapboxgl.Marker({}).setLngLat([lng,lat]).addTo(this.mapa)
+    var popup = new Mapboxgl.Popup({ offset: 25 }).setText("Dessierto")
+    const marker = new Mapboxgl.Marker({}).setLngLat([lng,lat]).addTo(this.mapa).setPopup(popup);
   }
 
   showInMap(){

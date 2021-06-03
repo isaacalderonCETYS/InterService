@@ -19,10 +19,10 @@ export class StoreCardComponent implements OnInit {
   @Input() lng!: number;
   @Input() lat!: number;
 
-
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
