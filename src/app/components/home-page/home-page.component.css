@@ -9,12 +9,53 @@
         #f4adde 75%,
         #cbe0bd 75%,
         #cbe0bd 100%);
-};
+    margin: 0px;
+}
 
-.bg-r-blue{
-    background: black;
-};
+.background-blue{
+    background: repeating-linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 75%,
+        #bed9e8 75%,
+        #bed9e8 100%);
+    margin: 0px;
+}
+
+.background-yellow{
+    background: repeating-linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 75%,
+        #f7deba 75%,
+        #f7deba 100%);
+    margin: 0px;
+}
+
+.background-pink{
+    background: repeating-linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 75%,
+        #f4adde 75%,
+        #f4adde 100%);
+    margin: 0px;
+}
+
+.background-green{
+    background: repeating-linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 75%,
+        #cbe0bd 75%,
+        #cbe0bd 100%);
+    margin: 0px;
+}
 
 .rounded-image{
     border-radius: 50%;
-};
+}
+
+.negative-margin{
+    margin-top: -20px;
+}
