@@ -1,0 +1,13 @@
+.negative-margin{
+    margin: 0px;
+    margin-bottom: -35px;
+}
+
+.negative-bottom{
+    margin-bottom: -15px;
+}
+
+.scrollable{
+    height: 700px;
+    overflow: auto;
+}

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
+  hideComida = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onFocusComida(){
+    this.hideComida = !this.hideComida;
   }
 
 }

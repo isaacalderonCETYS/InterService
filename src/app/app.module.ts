@@ -15,6 +15,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 import { TermsPageComponent } from './components/terms-page/terms-page.component';
+import { StoreCardComponent } from './components/store-card/store-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TermsPageComponent } from './components/terms-page/terms-page.component
     ProfilePageComponent,
     CartPageComponent,
     AboutUsPageComponent,
-    TermsPageComponent
+    TermsPageComponent,
+    StoreCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,47 @@
-<p>products-page works!</p>
+<div class="row">
+    <div class="col s3 scrollable">
+        <div class="row">
+            <div class="col s12 negative-margin">
+              <div class="card">
+                <div class="card-content">
+                    <div class="row negative-bottom">
+                        <div class="col s9">
+                            <form action="#">
+                                <div class="col s6">
+                                    <label>
+                                        <input type="checkbox" checked="checked" />
+                                        <span>Artículos</span>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label>
+                                        <input type="checkbox" checked="checked" />
+                                        <span>Objetos</span>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label>
+                                        <input type="checkbox" checked="checked" (focus)="onFocusComida()"/>
+                                        <span>Comida</span>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label>
+                                        <input type="checkbox" checked="checked" />
+                                        <span>Servicios</span>
+                                    </label>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <app-store-card *ngIf="!hideComida" nombre_empresa="@dessierto_mxl" eslogan="Calidez y Sabor" descripcion="Ventas, giveaways, sorteos y más" servicio="A domicilio" [instagram]=true [facebook]=true [estrellas]=4.6></app-store-card>
+        <app-store-card *ngIf="!hideComida" nombre_empresa="@dessierto_mxl" eslogan="Calidez y Sabor" descripcion="Ventas, giveaways, sorteos y más" servicio="A domicilio" [instagram]=true [facebook]=true [estrellas]=4.6></app-store-card>
+        <app-store-card *ngIf="!hideComida" nombre_empresa="@dessierto_mxl" eslogan="Calidez y Sabor" descripcion="Ventas, giveaways, sorteos y más" servicio="A domicilio" [instagram]=true [facebook]=true [estrellas]=4.6></app-store-card>
+        <app-store-card *ngIf="!hideComida" nombre_empresa="@dessierto_mxl" eslogan="Calidez y Sabor" descripcion="Ventas, giveaways, sorteos y más" servicio="A domicilio" [instagram]=true [facebook]=true [estrellas]=4.6></app-store-card>
+        <app-store-card *ngIf="!hideComida" nombre_empresa="@dessierto_mxl" eslogan="Calidez y Sabor" descripcion="Ventas, giveaways, sorteos y más" servicio="A domicilio" [instagram]=true [facebook]=true [estrellas]=4.6></app-store-card>
+    </div>
+</div>

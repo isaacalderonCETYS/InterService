@@ -1,0 +1,52 @@
+.no-link{
+    color: black !important;
+}
+
+.negative-margin{
+    margin: -18px;
+}
+
+
+.negative-bottom{
+    margin-bottom: -20px;
+}
+
+.background-vblue{
+    background: repeating-linear-gradient(
+        90deg,
+        #bed9e8 0%,
+        #bed9e8 3%,
+        #ffffff 3%,
+        #ffffff 100%);
+    margin: 0px;
+}
+
+.background-vyellow{
+    background: repeating-linear-gradient(
+        90deg,
+        #f7deba 0%,
+        #f7deba 3%,
+        #ffffff 3%,
+        #ffffff 100%);
+    margin: 0px;
+}
+
+.background-vpink{
+    background: repeating-linear-gradient(
+        90deg,
+        #f4adde 0%,
+        #f4adde 3%,
+        #ffffff 3%,
+        #ffffff 100%);
+    margin: 0px;
+}
+
+.background-green{
+    background: repeating-linear-gradient(
+        90deg,
+        #cbe0bd 0%,
+        #cbe0bd 3%,
+        #ffffff 3%,
+        #ffffff 100%);
+    margin: 0px;
+}
