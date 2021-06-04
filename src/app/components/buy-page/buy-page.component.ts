@@ -11,14 +11,16 @@ import {ProductsService} from '../../services/products.service'
 })
 export class BuyPageComponent implements OnInit {
 
+  id!: string;
+
   constructor(private route: ActivatedRoute, public productService: ProductsService) { }
 
   ngOnInit(): void {
-    let id = this.route.snapshot.paramMap.get('id')!;
-    this.productService.getProduct(id).subscribe(
+    this.id = this.route.snapshot.paramMap.get('id')!;
+    this.productService.getProducts().subscribe(
       res => {
-        this.productService.product = res;
-        console.log(this.productService.product);
+        this.productService.products = res;
+        console.log(res);
       },
       error => {
         console.log(error);
