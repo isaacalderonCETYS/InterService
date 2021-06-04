@@ -14,6 +14,10 @@ export class CompaniesService {
   constructor(private http: HttpClient) { }
 
   getCompanies(){
+    console.log("this.url_get_all");
+    console.log(this.url_get_all);
+    console.log("this.http.get<Empresa[]>(this.url_get_all)");
+    console.log(this.http.get<Empresa[]>(this.url_get_all));
     return this.http.get<Empresa[]>(this.url_get_all);
   }
 

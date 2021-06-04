@@ -68,6 +68,7 @@ export class CompaniesPageComponent implements OnInit {
         }
       },
       error => {
+        console.log("error");
         console.log(error);
       }
     )

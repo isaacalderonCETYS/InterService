@@ -1,0 +1,10 @@
+.justify{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+.img-square {
+    object-fit: cover;
+    width:150px;
+    height:150px;
+  }

@@ -4,7 +4,7 @@ export interface Empresa{
     eslogan: string
     descripcion: string
     servicio: string
-    categoria: string
+    // categoria: string
     instagram: boolean
     facebook: boolean
     direccion: string
