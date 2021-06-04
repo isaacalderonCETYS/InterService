@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
-import { Producto } from 'src/app/models/product';
-import {ProductsService} from '../../services/products.service'
+import { Empresa } from 'src/app/models/company';
+import {CompaniesService} from '../../services/companies.service'
 
 
 @Component({
@@ -13,13 +13,13 @@ export class BuyPageComponent implements OnInit {
 
   id!: string;
 
-  constructor(private route: ActivatedRoute, public productService: ProductsService) { }
+  constructor(private route: ActivatedRoute, public companyService: CompaniesService) { }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get('id')!;
-    this.productService.getProducts().subscribe(
+    this.id = this.route.snapshot.paramMap.get('empresa_id')!;
+    this.companyService.getCompanies().subscribe(
       res => {
-        this.productService.products = res;
+        this.companyService.companies = res;
         console.log(res);
       },
       error => {

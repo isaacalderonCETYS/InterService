@@ -1,19 +1,19 @@
 <div class="row">
     <div class="col s12 negative-bottom">
-      <div class="card hoverable" [ngClass]="{'background-vblue': product.categoria === 'Articulo', 'background-vyellow': product.categoria === 'Objeto', 'background-vpink': product.categoria === 'Comida', 'background-vgreen': product.categoria === 'Servicio' }">
+      <div class="card hoverable" [ngClass]="{'background-vblue': company.categoria === 'Articulo', 'background-vyellow': company.categoria === 'Objeto', 'background-vpink': company.categoria === 'Comida', 'background-vgreen': company.categoria === 'Servicio' }">
         <div class="card-content">
             <div class="row negative-margin">
                 <div class="col s9">
-                    <span class="card-title">{{product.nombre_empresa}}</span><i class="tiny material-icons">star</i>({{product.estrellas}})
-                    <h6>{{product.eslogan}}</h6>
-                    <p>{{product.descripcion}}</p>
+                    <span class="card-title">{{company.nombre_empresa}}</span><i class="tiny material-icons">star</i>({{company.estrellas}})
+                    <h6>{{company.eslogan}}</h6>
+                    <p>{{company.descripcion}}</p>
                 </div>
                 <div class="col s3">
                     <div class="col">
-                        <a *ngIf=product.facebook href="https://www.facebook.com/"><i class="small material-icons icon-black no-link">facebook</i></a>
+                        <a *ngIf=company.facebook href="https://www.facebook.com/"><i class="small material-icons icon-black no-link">facebook</i></a>
                     </div>
                     <div class="col">
-                        <a *ngIf=product.instagram href="https://www.instagram.com/"><img height="30px" src="../../../assets/icons/instagram-black.png"></a>
+                        <a *ngIf=company.instagram href="https://www.instagram.com/"><img height="30px" src="../../../assets/icons/instagram-black.png"></a>
                     </div>
                     <div class="col">
                         <i class="small material-icons icon-black no-link">map</i>
@@ -22,8 +22,8 @@
             </div>
         </div>
         <div class="card-action">
-          <a class="waves-effect waves-light btn modal-trigger right valign-wrapper" (click)=onSelect(product)>Comprar</a>
-          <span class="grey-text text-darken-1">{{product.servicio}}</span>
+          <a class="waves-effect waves-light btn modal-trigger right valign-wrapper" (click)=onSelect(company)>Comprar</a>
+          <span class="grey-text text-darken-1">{{company.servicio}}</span>
         </div>
       </div>
     </div>

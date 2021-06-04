@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { RoundedImageComponent } from './components/rounded-image/rounded-image.component';
-import { ProductsPageComponent } from './components/products-page/products-page.component';
+import { CompaniesPageComponent } from './components/companies-page/companies-page.component';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
@@ -26,7 +26,7 @@ import { BuyPageComponent } from './components/buy-page/buy-page.component';
     FooterComponent,
     HomePageComponent,
     RoundedImageComponent,
-    ProductsPageComponent,
+    CompaniesPageComponent,
     ProfilePageComponent,
     CartPageComponent,
     AboutUsPageComponent,

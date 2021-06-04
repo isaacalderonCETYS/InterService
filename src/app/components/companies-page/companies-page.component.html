@@ -39,22 +39,18 @@
             </div>
           </div>
 
-        <span *ngFor="let product of productService.products">
-            <span *ngIf="product.categoria == 'Comida'">
-                <!-- <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideComida" nombre_empresa={{product.nombre_empresa}} eslogan={{product.eslogan}} descripcion={{product.descripcion}} servicio={{product.servicio}} [instagram]=product.instagram [facebook]=product.facebook [estrellas]=product.estrellas categoria={{product.categoria}}></app-store-card> -->
-                <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideComida" [product]=product></app-store-card>
+        <span *ngFor="let company of companyService.companies">
+            <span *ngIf="company.categoria == 'Comida'">
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideComida" [company]=company></app-store-card>
             </span>
-            <span *ngIf="product.categoria == 'Articulo'">
-                <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideArticulo" [product]=product></app-store-card>
-                <!-- <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideArticulo" nombre_empresa={{product.nombre_empresa}} eslogan={{product.eslogan}} descripcion={{product.descripcion}} servicio={{product.servicio}} [instagram]=product.instagram [facebook]=product.facebook [estrellas]=product.estrellas categoria={{product.categoria}}></app-store-card> -->
+            <span *ngIf="company.categoria == 'Articulo'">
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideArticulo" [company]=company></app-store-card>
             </span>
-            <span *ngIf="product.categoria == 'Servicio'">
-                <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideServicio" [product]=product></app-store-card>
-                <!-- <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideServicio" nombre_empresa={{product.nombre_empresa}} eslogan={{product.eslogan}} descripcion={{product.descripcion}} servicio={{product.servicio}} [instagram]=product.instagram [facebook]=product.facebook [estrellas]=product.estrellas categoria={{product.categoria}}></app-store-card> -->
+            <span *ngIf="company.categoria == 'Servicio'">
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideServicio" [company]=company></app-store-card>
             </span>
-            <span *ngIf="product.categoria == 'Objeto'">
-                <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideObjeto" [product]=product></app-store-card>
-                <!-- <app-store-card (click)=showInMap(product.lng,product.lat) *ngIf="!hideObjeto" nombre_empresa={{product.nombre_empresa}} eslogan={{product.eslogan}} descripcion={{product.descripcion}} servicio={{product.servicio}} [instagram]=product.instagram [facebook]=product.facebook [estrellas]=product.estrellas categoria={{product.categoria}}></app-store-card> -->
+            <span *ngIf="company.categoria == 'Objeto'">
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideObjeto" [company]=company></app-store-card>
             </span>
         </span>
     </div>

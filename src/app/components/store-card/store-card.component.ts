@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { Producto } from 'src/app/models/product';
-import { ProductsPageComponent } from '../products-page/products-page.component';
+import { Empresa } from 'src/app/models/company';
+import { CompaniesPageComponent } from '../companies-page/companies-page.component';
 
 @Component({
   selector: 'app-store-card',
@@ -21,16 +21,16 @@ export class StoreCardComponent implements OnInit {
   // @Input() lng!: number;
   // @Input() lat!: number;
 
-  @Input() product!: Producto;
+  @Input() company!: Empresa;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  onSelect(product: Producto){
-    console.log(product.id)
-    this.router.navigate(['/buy', product.id]);
+  onSelect(company: Empresa){
+    console.log(company.empresa_id)
+    this.router.navigate(['/buy', company.empresa_id]);
   }
 
 }

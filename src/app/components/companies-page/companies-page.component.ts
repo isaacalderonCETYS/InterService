@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
-import {ProductsService} from '../../services/products.service'
+import {CompaniesService} from '../../services/companies.service'
 
 @Component({
-  selector: 'app-products-page',
-  templateUrl: './products-page.component.html',
-  styleUrls: ['./products-page.component.css']
+  selector: 'app-companies-page',
+  templateUrl: './companies-page.component.html',
+  styleUrls: ['./companies-page.component.css']
 })
-export class ProductsPageComponent implements OnInit {
+export class CompaniesPageComponent implements OnInit {
   
   mapa!: Mapboxgl.Map;
 
@@ -17,10 +17,10 @@ export class ProductsPageComponent implements OnInit {
   hideServicio = false;
   hideObjeto = false;
 
-  constructor(public productService: ProductsService) { }
+  constructor(public companyService: CompaniesService) { }
 
   ngOnInit(): void {
-    this.getProducts();
+    this.getCompanies();
 
     (Mapboxgl as typeof Mapboxgl).accessToken = environment.mapboxKey;
     this.mapa = new Mapboxgl.Map({
@@ -58,13 +58,13 @@ export class ProductsPageComponent implements OnInit {
     });
   }
 
-  getProducts(){
-    this.productService.getProducts().subscribe(
+  getCompanies(){
+    this.companyService.getCompanies().subscribe(
       res => {
-        this.productService.products = res;
+        this.companyService.companies = res;
         console.log(res);
-        for (let product of this.productService.products) {
-          this.crearMarcador(product.lng, product.lat);
+        for (let company of this.companyService.companies) {
+          this.crearMarcador(company.lng, company.lat);
         }
       },
       error => {
