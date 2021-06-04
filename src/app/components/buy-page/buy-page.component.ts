@@ -24,17 +24,12 @@ export class BuyPageComponent implements OnInit {
     this.companyService.getCompanies().subscribe(
       res => {
         this.companyService.companies = res;
-        console.log(res);
         for (let company of this.companyService.companies){
           if (company.empresa_id == this.id){
             for (let product of company.productos){
-              console.log("product")
-              console.log(product)
-              console.log(typeof product)
               this.productService.getProduct(product).subscribe(
                 res =>{
                   this.productos.push(res);
-                  console.log(this.productos);
                 },
                 error =>{
                   console.log(error);

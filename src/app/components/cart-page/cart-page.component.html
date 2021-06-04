@@ -13,7 +13,7 @@
                                 </div>
                                 <span *ngFor="let product of productService.products | slice:0:2">
                                     <div class="col s3 center-align">
-                                        <img alt="" class="circle responsive-img z-depth-5" src="../../../assets/resources/shrek_guapo.jpg" width="150">
+                                        <img alt="" class="circle responsive-img z-depth-5" src="../../../assets/resources/{{product.imgPath}}" width="150">
                                         <h6>{{product.nombre_producto}}</h6>
                                     </div>
                                 </span>
@@ -47,7 +47,7 @@
                 <div class="card-panel grey lighten-5 z-depth-1">
                     <div class="row valign-wrapper">
                         <div class="col s2">
-                            <img src="../../../assets/resources/shrek_guapo.jpg" alt="" class="circle responsive-img">
+                            <img src="../../../assets/resources/{{product.imgPath}}" alt="" class="circle responsive-img">
                         </div>
                         <div class="col s10">
                             <span class="black-text">

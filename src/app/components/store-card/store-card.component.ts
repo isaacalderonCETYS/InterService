@@ -29,7 +29,6 @@ export class StoreCardComponent implements OnInit {
   }
 
   onSelect(company: Empresa){
-    console.log(company.empresa_id)
     this.router.navigate(['/buy', company.empresa_id]);
   }
 

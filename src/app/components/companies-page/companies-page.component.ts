@@ -62,13 +62,11 @@ export class CompaniesPageComponent implements OnInit {
     this.companyService.getCompanies().subscribe(
       res => {
         this.companyService.companies = res;
-        console.log(res);
         for (let company of this.companyService.companies) {
           this.crearMarcador(company.lng, company.lat);
         }
       },
       error => {
-        console.log("error");
         console.log(error);
       }
     )

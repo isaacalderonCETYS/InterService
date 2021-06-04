@@ -26,10 +26,8 @@ export class CartPageComponent implements OnInit, AfterViewInit {
     this.productService.getProducts().subscribe(
       res => {
         this.productService.products = res;
-        console.log(res);
       },
       error => {
-        console.log("error");
         console.log(error);
       }
     )
@@ -40,10 +38,8 @@ export class CartPageComponent implements OnInit, AfterViewInit {
     this.companyService.getCompanies().subscribe(
       res => {
         this.company = res[0];
-        console.log(res);
       },
       error => {
-        console.log("error");
         console.log(error);
       }
     )

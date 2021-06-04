@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public productService: ProductsService ) { }
 
   ngOnInit(): void {
+    this.productService.getProducts().subscribe(
+      res => {
+        this.productService.products = res;
+      },
+      error => {
+        console.log(error);
+      }
+    )
   }
+
 
 }

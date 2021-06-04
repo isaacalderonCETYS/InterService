@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductsService {
-  url_get_all = "http://localhost:3000/api/chefsito/productos";
-  url_get_one = "http://localhost:3000/api/chefsito/producto/";
+  url_get_all = "http://localhost:3000/api/intersec/productos";
+  url_get_one = "http://localhost:3000/api/intersec/producto/";
   products: Producto[] | undefined;
   product!: Producto;
   constructor(private http: HttpClient) { }
