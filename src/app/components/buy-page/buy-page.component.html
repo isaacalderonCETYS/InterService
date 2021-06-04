@@ -1,7 +1,15 @@
 <span *ngFor="let company of companyService.companies">
 <span *ngIf="company.empresa_id == id">
     <div class="row">
-        <h4 class="header center-align">Empresas {{company.empresa_id}}</h4>
+        <h4 class="header center-align">{{company.nombre_empresa}}</h4>
+        <h5 class="header center-align">"{{company.eslogan}}"</h5>
+        <p class="col s6 offset-s3 flow-text center-align">
+            {{company.direccion}}
+            <br>
+            {{company.descripcion}}
+        </p>
+    </div>
+    <div class="row">
         <div class="col offset-s3 s2"> 
             <div class="card">
                 <div class="card-image">
