@@ -1,4 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Empresa } from 'src/app/models/company';
+import { CompaniesService } from 'src/app/services/companies.service';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -7,21 +10,47 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class CartPageComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  company!: Empresa;
+
+  constructor(public productService: ProductsService, public companyService: CompaniesService) { }
 
   ngOnInit(): void {
+    this.getCompanies();
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(elems, {
         indicators: true,
       });
     });
+
+    this.productService.getProducts().subscribe(
+      res => {
+        this.productService.products = res;
+        console.log(res);
+      },
+      error => {
+        console.log("error");
+        console.log(error);
+      }
+    )
     
+  }
+
+  getCompanies(){
+    this.companyService.getCompanies().subscribe(
+      res => {
+        this.company = res[0];
+        console.log(res);
+      },
+      error => {
+        console.log("error");
+        console.log(error);
+      }
+    )
   }
 
   ngAfterViewInit(): void {
     
   }
-  
 
 }

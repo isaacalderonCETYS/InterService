@@ -9,45 +9,30 @@
             {{company.descripcion}}
         </p>
     </div>
+    <h5 class="header center-align">Productos</h5>
     <div class="row">
-        <div class="col offset-s3 s2"> 
-            <div class="card">
-                <div class="card-image">
-                    <img src="../../../assets/resources/shrek_guapo.jpg">
-                    <span class="card-title">Card Title</span>
-                    <a onclick="M.toast({html: 'Procesando...', completeCallback: function(){alert('Se ha agregado el producto al carrito')}})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    <input type="number" id="tentacles" name="tentacles" min="1" max="100">
-                </div>
+        <div class="col s3"> 
+        </div>
+        <div class="col s6">
+            <div class="row">
+                <span *ngFor="let product of productos">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../../../assets/resources/{{product.imgPath}}">
+                                <span class="card-title">{{product.nombre_producto}}</span>
+                                <a onclick="M.toast({html: 'Procesando...', completeCallback: function(){alert('Se ha agregado el producto al carrito')}})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                            </div>
+                            <div class="card-content">
+                                <p>{{product.descripcion}}</p>
+                                <input type="number" id="tentacles" name="tentacles" min="1" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </span>
             </div>
         </div>
-        <div class="col s2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="../../../assets/resources/shrek_guapo.jpg">
-                    <span class="card-title">Card Title</span>
-                    <a onclick="M.toast({html: 'Procesando...', completeCallback: function(){alert('Se ha agregado el producto al carrito')}})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    <input type="number" id="tentacles" name="tentacles" min="1" max="100">
-                </div>
-            </div>
-        </div>
-        <div class="col s2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="../../../assets/resources/shrek_guapo.jpg">
-                    <span class="card-title">Card Title</span>
-                    <a onclick="M.toast({html: 'Procesando...', completeCallback: function(){alert('Se ha agregado el producto al carrito')}})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    <input type="number" id="tentacles" name="tentacles" min="1" max="100">
-                </div>
-            </div>
+        <div class="col s3">
         </div>
     </div>
 </span>
