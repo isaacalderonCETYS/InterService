@@ -6,7 +6,14 @@
 
 ### [Link de Adobe XD](https://xd.adobe.com/view/5e497c3e-e68c-4ecf-a9f3-da8d53eec375-0b1a/)
 
-### [Link de Trello](https://trello.com/b/zL9f6tCS/kanban-interservice)
+Librerías que deben instalarse:
+- mapbox-gl
+- fortawesome (angular-fontawesome, fontawesome-svg-core, free-brands-svg-icons, free-regular-svg-icons, free-solid-svg-icons)
+- mapbox-gl
+- materialize-css
+- rxjs
+- tslib
+- zone.js
 
 
 # Comments
