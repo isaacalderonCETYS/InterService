@@ -22,6 +22,7 @@ export class StoreCardComponent implements OnInit {
   // @Input() lat!: number;
 
   @Input() company!: Empresa;
+  @Input() boton!: boolean;
 
   constructor(private router: Router) { }
 

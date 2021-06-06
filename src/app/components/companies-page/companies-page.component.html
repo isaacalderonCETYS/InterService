@@ -41,16 +41,16 @@
 
         <span *ngFor="let company of companyService.companies">
             <span *ngIf="company.servicio == 'Comida'">
-                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideComida" [company]=company></app-store-card>
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideComida" [company]=company [boton]=true></app-store-card>
             </span>
             <span *ngIf="company.servicio == 'Articulo'">
-                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideArticulo" [company]=company></app-store-card>
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideArticulo" [company]=company [boton]=true></app-store-card>
             </span>
             <span *ngIf="company.servicio == 'Servicio'">
-                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideServicio" [company]=company></app-store-card>
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideServicio" [company]=company [boton]=true></app-store-card>
             </span>
             <span *ngIf="company.servicio == 'Objeto'">
-                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideObjeto" [company]=company></app-store-card>
+                <app-store-card (click)=showInMap(company.lng,company.lat) *ngIf="!hideObjeto" [company]=company [boton]=true></app-store-card>
             </span>
         </span>
     </div>
